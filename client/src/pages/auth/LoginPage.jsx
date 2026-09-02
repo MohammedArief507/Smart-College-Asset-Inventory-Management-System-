@@ -71,11 +71,11 @@ const LoginPage = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80')`,
+          backgroundImage: `url('https://w0.peakpx.com/wallpaper/1/1023/HD-wallpaper-bright-blue-for-website-banner-abstract-geometric-pattern-with-line-connection-and-light-particle-structure-of-energy-or-global-space-5490647-vector-art-at-vecteezy.jpg')`,
         }}
       />
       {/* Blur + dark overlay */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-[#020b56]/88 via-[#020b56]/72 to-indigo-900/82" />
+      <div className="absolute inset-0  from-[#020b56]/88 via-[#020b56]/72 to-indigo-900/82" />
 
       {/* Animated circles */}
       {[
@@ -98,20 +98,20 @@ const LoginPage = () => {
         initial={{ opacity: 0, y: 28, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="relative z-10 w-full max-w-md"
+        className="relative z-10 w-full max-w-sm"
       >
-        <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden ">
           {/* Top gradient bar */}
           <div className="h-1.5 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500" />
 
-          <div className="p-8 sm:p-10">
+          <div className="p-5 sm:p-6">
             {/* Logo section */}
-            <div className="flex flex-col items-center mb-8">
+            <div className="flex flex-col items-center mb-4">
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 180 }}
-                className="relative mb-4"
+                className="relative mb-2"
               >
                 <ImsLogo size={68} />
                 <div className="absolute inset-0 rounded-2xl bg-blue-500/25 blur-2xl -z-10 scale-150" />
@@ -124,7 +124,7 @@ const LoginPage = () => {
                 College Inventory Management System
               </p>
 
-              <div className="flex items-center gap-3 mt-5 w-full">
+              <div className="flex items-center gap-3 mt-3 w-full">
                 <div className="flex-1 h-px bg-white/10" />
                 <ShieldCheck className="w-4 h-4 text-blue-300/50 flex-shrink-0" />
                 <div className="flex-1 h-px bg-white/10" />
@@ -132,7 +132,7 @@ const LoginPage = () => {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
               {/* Email */}
               <div>
                 <label className="block text-sm font-semibold text-blue-100/90 mb-1.5">
@@ -225,7 +225,7 @@ const LoginPage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="mt-6 p-4 bg-white/5 border border-white/10 rounded-2xl"
+              className="mt-3 p-3 bg-white/5 border border-white/10 rounded-2xl"
             >
               <p className="text-xs text-blue-200/80 font-semibold mb-2 flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
@@ -239,7 +239,7 @@ const LoginPage = () => {
           </div>
 
           {/* Footer */}
-          <div className="px-8 py-3.5 border-t border-white/10 bg-black/10">
+          <div className="px-6 py-2.5 border-t border-white/10 bg-black/10">
             <p className="text-center text-xs text-blue-300/40 font-medium">
               Smart Asset IMS © 2024 · Secure Access
             </p>

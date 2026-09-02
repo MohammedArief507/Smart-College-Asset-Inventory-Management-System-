@@ -2,6 +2,8 @@
 // Run this ONCE to create the first Admin user
 // Command: node scripts/seedAdmin.js
 
+
+
 import dotenv from "dotenv";
 dotenv.config();
 
